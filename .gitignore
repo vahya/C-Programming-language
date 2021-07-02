@@ -1,0 +1,6 @@
+# Compiled Executables
+*.exe
+
+# local VSCode files
+**/.vscode/*
+**/.history

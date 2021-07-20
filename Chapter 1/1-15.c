@@ -5,10 +5,7 @@ Rewrite the temperature conversion program of
 Section1.2 to use a functionfor conversion.
 */
 
-float fahr_to_cel(float fahr)
-{
-    return (5.0 / 9.0) * (fahr - 32.0);
-}
+float fahr_to_cel(float fahr);
 
 int main()
 {
@@ -31,4 +28,9 @@ int main()
     }
 
     return 0;
+}
+
+float fahr_to_cel(float fahr)
+{
+    return (5.0 / 9.0) * (fahr - 32.0);
 }

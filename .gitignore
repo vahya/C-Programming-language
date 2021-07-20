@@ -4,3 +4,6 @@
 # local VSCode files
 **/.vscode/*
 **/.history
+
+# test input files
+*.txt

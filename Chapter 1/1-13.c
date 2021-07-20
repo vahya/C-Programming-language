@@ -9,32 +9,8 @@ horizontal; a vertical orientation is more challenging.
 
 #define MAX_WORDS 1000
 
-void draw_hor_hist(int word[], int n)
-{
-    int i, j;
-    for (i = 0; i < n; ++i)
-    {
-        for (j = 0; j < word[i]; ++j)
-            printf("* ");
-        printf("\n");
-    }
-}
-
-void draw_ver_hist(int word[], int n, int max)
-{
-    int i, j;
-    for (i = max; i > 0; --i)
-    {
-        for (j = 0; j < n; ++j)
-        {
-            if (word[j] - i >= 0)
-                printf("* ");
-            else
-                printf("  ");
-        }
-        printf("\n");
-    }
-}
+void draw_hor_hist(int word[], int n);
+void draw_ver_hist(int word[], int n, int max);
 
 int main()
 {
@@ -62,4 +38,31 @@ int main()
     draw_ver_hist(word, index, max);
 
     return 0;
+}
+
+void draw_hor_hist(int word[], int n)
+{
+    int i, j;
+    for (i = 0; i < n; ++i)
+    {
+        for (j = 0; j < word[i]; ++j)
+            printf("* ");
+        printf("\n");
+    }
+}
+
+void draw_ver_hist(int word[], int n, int max)
+{
+    int i, j;
+    for (i = max; i > 0; --i)
+    {
+        for (j = 0; j < n; ++j)
+        {
+            if (word[j] - i >= 0)
+                printf("* ");
+            else
+                printf("  ");
+        }
+        printf("\n");
+    }
 }

@@ -77,7 +77,7 @@ long long htoi(char s[], int n)
             power *= 16;
 
         if (s[i] >= '0' && s[i] <= '9')
-            digit = s[i] - 0;
+            digit = s[i] - '0';
         else if (s[i] >= 'a' && s[i] <= 'f')
             digit = s[i] - 'a' + 10;
         else if (s[i] >= 'A' && s[i] <= 'F')

@@ -48,7 +48,6 @@ int chomp(char s[], int n)
     if (s[n - 1] == '\n')
     {
         s[n - 1] = '\0';
-        printf("chomp: %d ", n - 1);
         return n - 1;
     }
 
